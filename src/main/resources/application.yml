@@ -1,0 +1,12 @@
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+
+services:
+  wallert-management:
+    base: localhost:8090
+    tpr-transaction-report: api/v1/reports/tpr-wise-transaction?start-date=2020-10-09&end-date=2020-10-11
